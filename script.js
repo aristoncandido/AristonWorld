@@ -1,5 +1,6 @@
 const saida = document.querySelector('#digitos')
 const player = document.querySelector("#player")
+var mute = "false"
 
 
 function digitacao(texto, contador){
@@ -39,13 +40,35 @@ digitacao('Aqui voce encontra todas as ideias virtuais de Ariston Candido e por 
 
 player.addEventListener('click',()=>{
 
-    const src = document.querySelector('audio');
-    const icone = document.querySelector("#player");
-    icone.src = './imgs/mute.png'
+    if(mute=="false"){
 
 
 
-    src.src = "";
+        const src = document.querySelector('audio');
+        const icone = document.querySelector("#player");
+        icone.src = './imgs/mute.png'
+    
+    
+    
+        src.src = "";
+        mute="true"
+    
+    }else{
+
+
+
+        const src = document.querySelector('audio');
+        const icone = document.querySelector("#player");
+        icone.src = './imgs/som.png';
+
+        src.src = "./audios/Barulho de chuva.mp3"
+        mute="false"
+
+
+    }
+
+  
+
 
 });
 

@@ -120,9 +120,9 @@ body{
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 100%;
+    height: 200%;
     background: url('./imgs/rain.png');
-    animation: rain 4s linear infinite;
+    animation: rain 8s linear infinite;
   
 
 
@@ -135,7 +135,7 @@ header{
     0px 0px 15px rgb(255, 0, 255),
     0px 0px 20px rgb(230, 78, 230);
     font-size: 20pt;
-    margin-top: 3%;
+    margin-top: 2%;
     font-family: 'Cyber3';
     font-weight: 1000;
    
@@ -160,6 +160,10 @@ ul{
         animation: piscar 0.2s linear forwards;
         
 }
+.op a{
+    text-decoration: none;
+    color: #ffffff;
+}
 hr{
     
     height: 100px;
@@ -183,7 +187,7 @@ hr::after{
 section{
 
     width: 90%;
-    height: 75%;
+    height: 32.rem;
     backdrop-filter: blur(7px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     background-color: rgba(255, 255, 255, 0);
@@ -194,16 +198,18 @@ section{
     animation: gira 1s infinite ;
     padding-bottom: 2%;
     margin-bottom: 5%;
+
+    
    
 }
 .player{
    position: absolute;
-   right: 4%;
+   right: 5%;
    top:2%;
 }
 .player img{
-    width: 3rem; 
-    height: 3rem;
+    width: 2rem; 
+    height: 2rem;
     position: relative;
     left: 100%;
     transition: 0.2s;
@@ -217,20 +223,23 @@ section{
 
 #s1{
 
-    width: 30%;
+    width: 20%;
     height: 50%;
-    margin-top: 10%;
+    margin-top: 5%;
+    order: 1;
+    padding-right: 5%;
 }
 .menu img{
     position: relative;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     width: 17rem;
     height:25rem;
     border-radius: 15pt;
     filter: drop-shadow(1px 1px 10px rgba(0, 140, 255, 0.459));
-    
- 
+    animation: piscar 0.3s 4s linear forwards ;
+   
+     
     
 }
 #s2{
@@ -243,35 +252,78 @@ section{
     0 0 12px #662959
     ;
    
-    width:70%;
+    width:60%;
     height: 50%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
 
 }
 #s2 h1{
     animation: piscar 0.3s 1s linear forwards  ;
     font-size: 45pt;
-    margin-left: 5%;
+
+    margin-top: -5%;
 }
 
 
 #s2 h2{
     font-family: 'Cyber2';
     font-size: 25pt;
-    width: 50%;
+    width: 65%;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0 5px cyan,
     0px 0 10px cyan,
     0px 0 15px cyan;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .menu img:hover{
     cursor: pointer;
-    animation: piscar 0.3s  linear forwards ;
+
 }
 
 section#bloco2{
     margin-top: 5%;
-    height: 6rem;
+    height: 25rem;
+    display: block;
+    font-family: 'Cyber1';
+    color: #ffffff;
+    text-shadow:0 0 2px #f179d7,
+    0 0 2px #f179d7,
+    0 0 5px #f399df,
+    0 0 10px #a0518f,
+    0 0 12px #662959
+    ;
+    
+    padding: 5%;
+
+}
+#bloco2 h2{
+    font-size: 25pt;
+}
+
+#s3{
+    order: -1;
+    width: 20%;
+}
+
+.gif{
+      
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top:7% ;
+    margin-right: 5%;
+    margin-left: 12%;
+    filter: hue-rotate('180deg');
+    filter: drop-shadow(0px 0px 10px cyan);
+
+}
+#pc{
+   
+     position: relative;
+     width: 15rem;
+     height: 15rem;
+     top: 10%;
+     filter: drop-shadow(0px 0px 10px rgb(250, 3, 147));
 }
