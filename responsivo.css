@@ -1,0 +1,55 @@
+
+@media screen and (max-width:800px) {
+    
+    header{
+        font-size: 10pt;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    section{
+        flex-direction: column-reverse  ;
+        width: 80%;
+    }
+    #s2{
+        width: 100%;
+        
+    }
+    #s2 h1{
+       font-size: 30pt;
+       width:50%;
+       position: absolute;
+       left: 50%;
+       text-align: center;
+       transform: translateX(-50%);
+       margin: 0 auto 0 auto;
+      
+    }
+    #s1{
+            width: 100%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu img{
+        width: 12rem;
+        height: 12rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+       
+
+        
+    }
+    #player{
+       width:  2rem;
+       height: 2rem;
+    }
+
+
+    #digitos{
+
+        color: ;
+    }
+}
