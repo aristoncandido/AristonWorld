@@ -15,7 +15,10 @@
     font-family: 'Cyber3';
     src: url(./fontes/Neon\ Future.ttf);
 }
-
+@font-face {
+    font-family: 'Win';
+    src: url(./fontes/Windows\ Regular.ttf);
+}
 @keyframes rain{
     0%{
         background-position: 0 0 ;
@@ -101,7 +104,11 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-   background-size: cover;
+    background-size: cover;
+    cursor: url('./imgs/cursor-removebg-preview\ \(1\).png') 6 6,auto;
+    
+
+
 }
 
 .conteiner{
@@ -187,7 +194,7 @@ hr::after{
 section{
 
     width: 90%;
-    height: 32.rem;
+
     backdrop-filter: blur(7px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     background-color: rgba(255, 255, 255, 0);
@@ -260,9 +267,9 @@ section{
     
 }
 #s2 h1{
-    animation: piscar 0.3s 1s linear forwards  ;
+    animation: piscar 0.3s 13s linear forwards  ;
     font-size: 45pt;
-
+    margin-left: 0;
     margin-top: -5%;
 }
 
@@ -352,4 +359,102 @@ section p{
 }
 #js,#boot,#react{
     margin-top: 1%;
+}
+
+section h1{
+
+    font-family: 'Cyber1';
+    color: #ffffff;
+    text-shadow:0 0 2px #f179d7,
+    0 0 2px #f179d7,
+    0 0 5px #f399df,
+    0 0 10px #a0518f,
+    0 0 12px #662959
+    ;
+    margin-left: 5.5%;
+    margin-top: 4%;
+
+
+}
+#bloco3{
+    padding-top: 0.02%;
+    display: flex;
+  
+}
+#bloco3 p {
+    margin-left: 5.5%;
+    font-family: 'Cyber2';
+    color: white;
+    text-shadow:0 0 2px #00c3ff,
+    0 0 2px #1ec0f1,
+    0 0 5px #0059ff,
+    0 0 10px #5cc8ea,
+    0 0 12px #0095c2
+    ;
+
+}
+.services{
+    width: 40%;
+    margin-left: 4%;
+
+}
+
+.img{
+
+    width: 56%;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    height: 25%;
+   
+ 
+    
+}
+.arquivos{
+    position: relative;
+    top: -20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    left: 43%;
+    transform: translate(-50%,50%);
+    width: 15rem;
+    height: 10rem;
+    
+    
+}
+
+
+.img #win {
+    width: 25rem;
+    height: 20rem;
+    position: relative;
+    top: 0;
+    right: 0;
+    box-shadow: 2px 2px 10px black;
+}
+.img #explorer{
+    position: relative;
+
+    width: 60px;
+    height: 55px;
+    z-index: 100;
+    filter:drop-shadow(2px 2px 10px black) ;
+    
+
+}
+.img .arquivos img {
+    width: 50px;
+    height: 45px;
+    filter:drop-shadow(2px 2px 10px black) ;
+    
+}
+
+label{
+    font-family: 'Win';
+    font-size: 10pt;
+    text-shadow: 0px 0px 1px black;
 }
