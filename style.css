@@ -1,103 +1,114 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 @font-face {
     font-family: 'Cyber1';
     src: url(./fontes/Future\ Now.ttf);
 }
+
 @font-face {
     font-family: 'Cyber2';
     src: url(./fontes/FutureTech.ttf);
 }
+
 @font-face {
     font-family: 'Cyber3';
     src: url(./fontes/Neon\ Future.ttf);
 }
+
 @font-face {
     font-family: 'Win';
     src: url(./fontes/Windows\ Regular.ttf);
 }
-@keyframes rain{
-    0%{
-        background-position: 0 0 ;
+
+@keyframes rain {
+    0% {
+        background-position: 0 0;
     }
-    100%{
+
+    100% {
         background-position: 10% 1000%;
     }
 }
 
-@keyframes piscar{
-    0%{
+@keyframes piscar {
+    0% {
         opacity: 0%;
 
     }
 
-    50%{
+    50% {
         opacity: 100%;
     }
-    75%{
+
+    75% {
         opacity: 0%;
     }
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
 
-@keyframes girar{
+@keyframes girar {
 
 
-    0%{
+    0% {
         border-top: 3px solid transparent;
-        
+
         border-left: 3px solid transparent;
         border-right: 3px solid transparent;
-           
+
         border-bottom: 3px solid transparent;
-        
-        
-    } 
-    25%{
-        border-right: 5px solid cyan;
-           
-        border-left: 3px solid transparent;
-        border-top: 3px solid transparent;
-           
-        border-bottom: 5px solid transparent;
-      
-        
+
 
     }
-    50%{
+
+    25% {
+        border-right: 5px solid cyan;
+
+        border-left: 3px solid transparent;
+        border-top: 3px solid transparent;
+
+        border-bottom: 5px solid transparent;
+
+
+
+    }
+
+    50% {
         border-right: 3px solid transparent;
-          
+
         border-left: 3px solid transparent;
         border-top: 5px solid transparent;
-           
+
         border-bottom: 3px solid cyan;
 
     }
-    75%{
+
+    75% {
         border-left: 3px solid cyan;
         border-top: 3px solid transparent;
         border-right: 3px solid transparent;
         border-bottom: 3px solid transparent;
     }
-    100%{
-        
-        border-top: 3px  solid cyan;
-        
+
+    100% {
+
+        border-top: 3px solid cyan;
+
         border-left: 3px solid transparent;
         border-right: 3px solid transparent;
-           
-        border-bottom:3px  solid transparent;
-        
+
+        border-bottom: 3px solid transparent;
+
     }
 
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-image: url(./imgs/cyber.jpg);
@@ -105,23 +116,23 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    cursor: url('./imgs/cursor-removebg-preview\ \(1\).png') 6 6,auto;
-    
+    cursor: url('./imgs/cursor-removebg-preview\ \(1\).png') 6 6, auto;
+
 
 
 }
 
-.conteiner{
+.conteiner {
 
 
     width: 100%;
     height: 100%;
-  
- 
+
+
 }
 
-.conteiner::before{
- 
+.conteiner::before {
+
     content: '';
     position: absolute;
     top: 0%;
@@ -130,57 +141,63 @@ body{
     height: 200%;
     background: url('./imgs/rain.png');
     animation: rain 8s linear infinite;
-  
+
 
 
 }
-header{
+
+header {
     width: 100%;
     height: 5rem;
     color: #ffffff;
     text-shadow: 0px 0px 5px rgb(255, 0, 255),
-    0px 0px 15px rgb(255, 0, 255),
-    0px 0px 20px rgb(230, 78, 230);
+        0px 0px 15px rgb(255, 0, 255),
+        0px 0px 20px rgb(230, 78, 230);
     font-size: 20pt;
     margin-top: 2%;
     font-family: 'Cyber3';
     font-weight: 1000;
-   
+
 }
 
-ul{
+ul {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-evenly;
-    align-items: center;   
+    align-items: center;
     list-style-type: none;
-    
+
 }
-.op{
+
+.op {
     position: relative;
     z-index: 0;
 
 }
-.op:hover{
-        cursor: pointer;
-        animation: piscar 0.2s linear forwards;
-        
+
+.op:hover {
+    cursor: pointer;
+    animation: piscar 0.2s linear forwards;
+
 }
-.op a{
+
+.op a {
     text-decoration: none;
     color: #ffffff;
 }
-hr{
-    
+
+hr {
+
     height: 100px;
     width: 80%;
     position: absolute;
     color: #f7f7f7;
-    
-    
+
+
 }
-hr::after{
+
+hr::after {
     content: "";
     position: absolute;
     z-index: 100;
@@ -191,7 +208,7 @@ hr::after{
 }
 
 
-section{
+section {
 
     width: 90%;
 
@@ -202,229 +219,256 @@ section{
     border: 0 0 0 0;
     margin: 0 auto 0 auto;
     display: flex;
-    animation: gira 1s infinite ;
+    animation: gira 1s infinite;
     padding-bottom: 2%;
     margin-bottom: 5%;
 
-    
-   
+
+
 }
-.player{
-   position: absolute;
-   right: 5%;
-   top:2%;
+
+.player {
+    position: absolute;
+    right: 5%;
+    top: 2%;
 }
-.player img{
-    width: 2rem; 
+
+.player img {
+    width: 2rem;
     height: 2rem;
     position: relative;
     left: 100%;
     transition: 0.2s;
-    box-shadow:(10px 20px 1px rgb(0, 162, 255),0px 0px 10px rgb(3, 104, 255),0px 0px 20px rgb(0, 153, 255),0px 0px 25px rgb(0, 183, 255));
+    box-shadow: (10px 20px 1px rgb(0, 162, 255), 0px 0px 10px rgb(3, 104, 255), 0px 0px 20px rgb(0, 153, 255), 0px 0px 25px rgb(0, 183, 255));
 }
 
-#player:hover{
+#player:hover {
     cursor: pointer;
 
 }
 
-#s1{
+#s1 {
 
 
-    
+
     margin-top: 5%;
     order: 1;
-   
+
 }
-.menu img{
+
+.menu img {
     position: relative;
     left: 40%;
     transform: translateX(-50%);
     width: 17rem;
-    height:25rem;
+    height: 25rem;
     border-radius: 15pt;
     filter: drop-shadow(1px 1px 10px rgba(0, 140, 255, 0.459));
-    animation: piscar 0.3s 4s linear forwards ;
-   
-     
-    
+    animation: piscar 0.3s 4s linear forwards;
+
+
+
 }
-#s2{
+
+#s2 {
     font-family: 'Cyber1';
     color: #ffffff;
-    text-shadow:0 0 2px #f179d7,
-    0 0 2px #f179d7,
-    0 0 5px #f399df,
-    0 0 10px #a0518f,
-    0 0 12px #662959
-    ;
-   
-    width:100%;
+    text-shadow: 0 0 2px #f179d7,
+        0 0 2px #f179d7,
+        0 0 5px #f399df,
+        0 0 10px #a0518f,
+        0 0 12px #662959;
+
+    width: 100%;
     height: 50%;
     margin-top: 10%;
     margin-left: 10%;
 
-    
+
 }
-#s2 h1{
-    animation: piscar 0.3s 13s linear forwards  ;
+
+#s2 h1 {
+    animation: piscar 0.3s 13s linear forwards;
     font-size: 45pt;
     margin-left: 0;
     margin-top: -5%;
 }
 
 
-#s2 h2{
+#s2 h2 {
     font-family: 'Cyber2';
     font-size: 25pt;
     width: 100%;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0 5px cyan,
-    0px 0 10px cyan,
-    0px 0 15px cyan;
-  
+        0px 0 10px cyan,
+        0px 0 15px cyan;
+
 }
 
-.menu img:hover{
+.menu img:hover {
     cursor: pointer;
 
 }
 
-section#bloco2{
+section#bloco2 {
     margin-top: 5%;
     height: 30rem;
     display: block;
     font-family: 'Cyber1';
     color: #ffffff;
-    text-shadow:0 0 2px #f179d7,
-    0 0 2px #f179d7,
-    0 0 5px #f399df,
-    0 0 10px #a0518f,
-    0 0 12px #662959
-    ;
-    
+    text-shadow: 0 0 2px #f179d7,
+        0 0 2px #f179d7,
+        0 0 5px #f399df,
+        0 0 10px #a0518f,
+        0 0 12px #662959;
+
     padding: 5%;
 
 }
-#bloco2 h2{
+
+#bloco2 h2 {
     font-size: 25pt;
 }
 
-section p{
+section p {
     color: white;
     text-shadow: 0px 0px 5px cyan;
     font-size: 15pt;
 }
 
 
-#s3{
+#s3 {
     order: -1;
     width: 20%;
 }
 
-.gif{
-      
+.gif {
+
     width: 15rem;
     height: 15rem;
     position: relative;
-    top:5% ;
+    top: 5%;
     margin-right: 5%;
     margin-left: 12%;
     filter: hue-rotate('180deg');
     filter: drop-shadow(0px 0px 10px cyan);
 
 }
-#pc{
-   
-     position: relative;
-     width: 15rem;
-     height: 15rem;
-     top: 10%;
-     filter: drop-shadow(0px 0px 10px rgb(250, 3, 147));
+
+#pc {
+
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    top: 10%;
+    filter: drop-shadow(0px 0px 10px rgb(250, 3, 147));
 }
-#tecnologias{
+
+#tecnologias {
     display: flex;
     width: 100%;
     margin-top: 2%;
     justify-content: space-around;
 }
-.tec{
+
+.tec {
     width: 5%;
     height: 5%;
     filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
 }
-#react{
+
+#react {
     width: 6%;
     height: 6%;
 }
-#js,#boot,#react{
+
+#js,
+#boot,
+#react {
     margin-top: 1%;
 }
 
-section h1{
+section h1 {
 
     font-family: 'Cyber1';
     color: #ffffff;
-    text-shadow:0 0 2px #f179d7,
-    0 0 2px #f179d7,
-    0 0 5px #f399df,
-    0 0 10px #a0518f,
-    0 0 12px #662959
-    ;
+    text-shadow: 0 0 2px #f179d7,
+        0 0 2px #f179d7,
+        0 0 5px #f399df,
+        0 0 10px #a0518f,
+        0 0 12px #662959;
     margin-left: 5.5%;
     margin-top: 4%;
 
 
 }
-#bloco3{
+
+#bloco3 {
     padding-top: 0.02%;
     display: flex;
-  
+
 }
+
 #bloco3 p {
     margin-left: 5.5%;
     font-family: 'Cyber2';
     color: white;
-    text-shadow:0 0 2px #00c3ff,
-    0 0 2px #1ec0f1,
-    0 0 5px #0059ff,
-    0 0 10px #5cc8ea,
-    0 0 12px #0095c2
-    ;
+    text-shadow: 0 0 2px #00c3ff,
+        0 0 2px #1ec0f1,
+        0 0 5px #0059ff,
+        0 0 10px #5cc8ea,
+        0 0 12px #0095c2;
 
 }
-.services{
+
+.services {
     width: 40%;
     margin-left: 4%;
 
 }
 
-.img{
+.img {
 
-    width: 56%;
-    padding-left: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-    height: 25%;
-   
- 
-    
+    width: 50%;
+
+
+
+
+
+
 }
-.arquivos{
+
+.janela {
+    background-image: url(./imgs/telaWin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 250px;
+    height: 250px;
     position: relative;
-    top: -20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    z-index: 100;
+  
+    filter: drop-shadow(2px 2px 5px);
+
+}
+
+.arquivos {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     left: 43%;
-    transform: translate(-50%,50%);
+    transform: translate(-50%, 50%);
     width: 15rem;
     height: 10rem;
-    
-    
+
+
 }
 
 
@@ -436,24 +480,26 @@ section h1{
     right: 0;
     box-shadow: 2px 2px 10px black;
 }
-.img #explorer{
+
+.img #explorer {
     position: relative;
 
-    width: 60px;
-    height: 55px;
+    width: 40px;
+    height: 35px;
     z-index: 100;
-    filter:drop-shadow(2px 2px 10px black) ;
-    
+    filter: drop-shadow(2px 2px 10px black);
+
 
 }
+
 .img .arquivos img {
-    width: 50px;
-    height: 45px;
-    filter:drop-shadow(2px 2px 10px black) ;
-    
+    width: 30px;
+    height: 25px;
+    filter: drop-shadow(2px 2px 10px black);
+
 }
 
-label{
+label {
     font-family: 'Win';
     font-size: 10pt;
     text-shadow: 0px 0px 1px black;
