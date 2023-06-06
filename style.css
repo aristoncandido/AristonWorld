@@ -109,18 +109,26 @@
 }
 
 body {
+    transition: 0.8s;
     width: 100%;
     height: 100vh;
     background-image: url(./imgs/cyber.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+   
     background-size: cover;
     cursor: url('./imgs/pizza.png') 6 6 , auto;
 
 
 
 
+}
+.bg-gdt{  /*Gradiente no body*/
+
+    background-image: linear-gradient(to right,#140010, black );
+
+     
 }
 
 .conteiner {
@@ -130,6 +138,12 @@ body {
     height: 100%;
 
 
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: none;
+    color: white;
 }
 
 .conteiner::before {
@@ -146,20 +160,75 @@ body {
 
 
 }
+.semanima::before{
+
+    background: none;
+    animation: none;
+}
 
 header {
     width: 100%;
     height: 5rem;
     color: #ffffff;
-    text-shadow: 0px 0px 5px rgb(255, 0, 255),
+    text-shadow: 0px 0px 5px #E032E6,
         0px 0px 15px rgb(255, 0, 255),
         0px 0px 20px rgb(230, 78, 230);
     font-size: 20pt;
     margin-top: 2%;
     font-family: 'Cyber3';
     font-weight: 1000;
+    margin-bottom: 3%;
 
 }
+
+.tema{
+     position: relative;
+     right: -60%;
+     margin-top: 1%;
+     color: rgb(255, 255, 255);
+     font-weight: 300;
+     font-size: 15pt;
+     text-shadow: 0px 0px 1px #B332E6,
+     0px 0px 1px rgb(0, 0, 0),
+     0px 0px 1px rgb(0, 0, 0),
+     0px 0px 1px rgb(0, 0, 0),
+     0px 0px 1px rgb(0, 0, 0),
+     0px 0px 1px rgb(0, 0, 0),
+     0px 0px 1px rgb(0, 0, 0);
+
+
+}
+#btn_tema{
+    border-color: white;
+    box-shadow: 0;
+    box-shadow: #f179d7;
+   
+    background-color: #af2a92;
+    box-shadow: none;
+}
+#btn_tema:hover{
+    cursor: pointer;
+}
+
+#limpa_tema{
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #E032E6,
+    0px 0px 10px #E032E6,
+    0px 0px 15px #E032E6;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    
+
+}
+
+.cor-rosa{
+    background-color: rgb(255, 1, 242);
+}
+
+
 
 ul {
     display: flex;
@@ -214,7 +283,7 @@ section {
     width: 90%;
 
     backdrop-filter: blur(7px) saturate(150%);
-    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 12px;
     border: 0 0 0 0;
@@ -223,6 +292,10 @@ section {
     animation: gira 1s infinite;
     padding-bottom: 2%;
     margin-bottom: 5%;
+
+    border: 1px solid #ffffff ;
+    box-shadow: 0px 0px 15px  #00c3ff ,
+    0px 0px 20px   #00c3ff ;
 
 
 
@@ -530,4 +603,6 @@ label {
     font-family: 'Win';
     font-size: 10pt;
     text-shadow: 0px 0px 1px black;
+
+    
 }
