@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Bits';
+    src: url(./fontes/bits.TTF);
+}
+
+#digitos2{
+    text-align: center;
+  
+    margin: 3% auto 0 auto;
+}
+
+
+
+.about{
+    
+    width: 50%;
+    
+    padding-top: 10%;
+
+    text-align: center;
+
+}
+
+.sonic{
+    padding-left: 5%;
+    display: flex;
+    width: 100%;
+ 
+}
+#sonic_title{
+    display: flex;
+    position: relative;
+    padding-left: 25%;
+
+}
+#sonic_head{
+    height: 10%;
+    position: relative;
+    margin-left: 5%;
+    left: 5%;
+    
+
+    animation: sonic_anima 1.8s infinite;
+
+}
+.sonic h2{
+
+    font-family: 'Bits';
+    color: gold;
+
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+.sonic p{
+    width: 90%;
+    font-family: 'Cyber1';
+    font-size: larger;
+}
+
+
+@keyframes sonic_anima {
+
+    0%{
+       
+       transform:rotateY(0deg)
+    }
+    
+
+    100%{
+        
+        transform:rotateY(360deg)
+    }
+}
+
+.Video_sonic{
+    width: 50%;
+    padding-right: 5%;
+    padding-top: 10%;
+    
+}
+
+.Video_sonic img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 15pt;
+
+}
+
+
+.cloud{
+    margin-top: 15%;
+    width: 100%;
+ 
+    display: flex;
+
+    color: white;
+    
+
+
+}
+.cloud_sobre{
+    font-family: 'Cyber1';
+    font-size: 20pt;
+    width: 50%;
+    text-align: center;
+}
+.cloud_sobre h2{
+
+    text-shadow: 0px 0px 5px rgb(255, 0, 191);
+}
+.img_cloud{
+    width: 50%;
+   
+    height: 15rem;
+}
+
+.img_cloud img{
+     
+    width: 80%;
+    position: relative;
+    height: 110%;
+    margin-left: 15%;
+    border-radius: 15pt;
+
+
+}

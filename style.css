@@ -131,6 +131,8 @@ body {
      
 }
 
+
+
 .conteiner {
 
 
@@ -606,3 +608,25 @@ label {
 
     
 }
+
+.porti{
+    display: block;
+}
+
+/* .icones_porti{
+
+    display: flex;
+    padding-left: 5%;
+}
+.icones_porti img{
+      
+     border:1px #f179d7 solid ;
+     box-shadow: 1px 1px 5px rgb(255, 0, 149);
+} */
+
+
+#sonic_head{
+    width: 70px;
+    height: 60px;
+}
+

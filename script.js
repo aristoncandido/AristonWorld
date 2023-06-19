@@ -1,5 +1,6 @@
 const saida = document.querySelector("#digitos");
 const player = document.querySelector("#player");
+const saida2 = document.querySelector('#digitos2');
 var mute = "false";
 
 function digitacao(texto, contador) {
@@ -12,11 +13,28 @@ function digitacao(texto, contador) {
     }, 90);
   }
 }
+function digitacao2(texto, contador) {
+  if (contador < texto.length) {
+    setTimeout(() => {
+      saida2.textContent += texto.charAt(contador);
+      contador++;
+
+      digitacao(texto, contador);
+    }, 90);
+  }
+}
+
 
 digitacao(
   "Aqui voce encontra todas as ideias virtuais de Ariston Candido e por onde ele passou ! :P",
   -10
 );
+
+/* digitacao2(
+  "Alguns dos meus trabalhos que venho desenvolvendo",-10
+);
+ */
+
 
 /* FUNÇÃO DE MUTAR */
 
